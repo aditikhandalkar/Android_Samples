@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="2dp" >
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/border"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flag"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:text="Samsung haeuiohe eif ioehie eoiwer eirweoeir jwhue ewheu qweuiieq wqwuieywue " />
+
+    <RatingBar
+        android:id="@+id/Stars"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NewPrice"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:id="@+id/OldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:contentDescription="@string/app_name"
+        android:text="2345" />
+
+    <TextView
+        android:id="@+id/NewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/OldPrice"
+        android:layout_alignBottom="@+id/OldPrice"
+        android:layout_alignRight="@+id/Name"
+        android:contentDescription="@string/app_name"
+        android:text="1234" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/flag"
+        android:layout_alignLeft="@+id/flag"
+        android:background="@drawable/offer_left_back"
+        android:textSize="8sp"
+        android:padding="2dp"
+        android:text="DFS DEALS" />
+
+    <TextView
+        android:id="@+id/savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/flag"
+        android:layout_alignRight="@+id/flag"
+        android:background="@drawable/offer_right_back"
+        android:textSize="8sp"
+        android:padding="2dp"
+        android:text="SAVE" />
+
+</RelativeLayout>
